@@ -1,6 +1,6 @@
-from classify_as_regex import classify_with_regex
-from classify_as_bert import classify_with_bert
-from classify_as_llm import classify_with_llm
+from classifiers.classify_as_regex import classify_with_regex
+from classifiers.classify_as_bert import classify_with_bert
+from classifiers.classify_as_llm import classify_with_llm
 
 def classify(logs):
     labels = []
