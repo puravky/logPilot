@@ -9,7 +9,7 @@ def classify_with_llm(logs):
     If you can't classify the log message into either of these categories, return "Unclassified". Only return the category name without any explanation or additional text.
     Log message: {logs}"""
     response = groq.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="qwen/qwen3.6-27b",
         messages=[
             {"role": "user", "content": prompt}
         ]
